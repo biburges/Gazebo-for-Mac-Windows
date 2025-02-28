@@ -18,4 +18,14 @@ brew install gz-harmonic
 ## How to Run the System
 ---
 ## Mac
-To run Gazebo, run the following code in your terminal:
+
+Launch Gazebo server by Running:
+
+``
+gz sim -v 4 shapes.sdf -s  
+``
+Launch Gazebo gui in another terminal:
+
+``
+gz sim -v 4 -g 
+``
