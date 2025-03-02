@@ -17,6 +17,8 @@ Run the following code in a terminal:
 
 ``
 brew tap osrf/simulation
+``
+``
 brew install gz-harmonic
 ``
 
