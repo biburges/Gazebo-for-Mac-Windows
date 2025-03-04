@@ -33,7 +33,7 @@ ulimit -n 100000
 ``
 
 ---
-### Windows
+### Windows (Installing Gazebo Classic 11)
 - Ensure you have windows subsystem for linux (WSL) installed, if not, install by running
   ```
   wsl --install
