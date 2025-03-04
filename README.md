@@ -349,6 +349,7 @@ You want to add a plugin which will help control the robot in the world that was
     <topic>cmd_vel</topic>
 </plugin>
 ``
+
 (For Macs) to launch the server run the code ``` gz sim -v 4 building_robot.sdf -s``` in one terminal and `` gz sim -v 4 -g `` in another terminal to launch the gui and in a third terminal ``gz topic -t "/cmd_vel" -m gz.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"`` to send commands to your robot. This one is sending a command to move at a linear speed of x:0.5 and angular speed of y:0.05
 
 However, if you want to control the robot using you keyboard, using the arrow keys, you want to do the following steps:
