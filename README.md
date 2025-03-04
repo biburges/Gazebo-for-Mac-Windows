@@ -54,7 +54,7 @@ gz sim -v 4 -g
 ---
 ### Windows
 
-## Build a Robot
+## Build a Robot(Car)
 
 ### Build a World
 
