@@ -34,6 +34,31 @@ ulimit -n 100000
 
 ---
 ### Windows
+- Ensure you have windows subsystem for linux (WSL) installed, if not, install by running
+  ```
+  wsl --install
+  ```
+- Restart laptop after installation
+- Run wsl by simply typing the following into the powershell terminal run as administrator
+  ```
+  wsl
+  ```
+- Type the following to update all the packages
+  ```
+  sudo apt update && sudo apt upgrade -y
+  ```
+- Type the following to install the gazebo simulator, via snap, which is a package management system designed for linux which contains all the dependencies.
+  ```
+  sudo snap install gazebo
+  ```
+- The folloing installs gazebo
+  ```
+  sudo apt install gazebo
+  ```
+- Run gazebo
+  ```
+  gazebo
+  ```
 
 ## How to Run the System
 
@@ -53,6 +78,11 @@ gz sim -v 4 -g
 
 ---
 ### Windows
+- Run gazebo for windows by running the following in powershell (as admin)
+  ```
+  wsl
+  gazebo
+  ```
 
 ## Build a Robot(Car)
 
