@@ -331,6 +331,8 @@ First Create a SDF file titled ``` building_robot.sdf ``` and paste the followin
 ```
 This should have created a two wheel car that looks like the following:
 
+![My Image](car.png)
+
 (For Mac) Then navigate in your terminal to where you put the file and then run the code ``` gz sim -v 4 building_robot.sdf -s``` in one terminal to launch the simulator server and `` gz sim -v 4 -g `` in another terminal to launch the gui
 
 ## Move the Robot(Car)
