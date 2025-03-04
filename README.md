@@ -337,7 +337,8 @@ This should have created a two wheel car that looks like the following:
 
 You want to add a plugin which will help control the robot in the world that was created. This can be done by pasting the following code into your `` building_robots.sdf `` file
 
-``
+```
+
 <plugin
     filename="gz-sim-diff-drive-system"
     name="gz::sim::systems::DiffDrive">
@@ -348,7 +349,8 @@ You want to add a plugin which will help control the robot in the world that was
     <odom_publish_frequency>1</odom_publish_frequency>
     <topic>cmd_vel</topic>
 </plugin>
-``
+
+```
 
 (For Macs) to launch the server run the code ``` gz sim -v 4 building_robot.sdf -s``` in one terminal and `` gz sim -v 4 -g `` in another terminal to launch the gui and in a third terminal ``gz topic -t "/cmd_vel" -m gz.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"`` to send commands to your robot. This one is sending a command to move at a linear speed of x:0.5 and angular speed of y:0.05
 
@@ -361,7 +363,7 @@ However, if you want to control the robot using you keyboard, using the arrow ke
 
 In the `` gz topic -e -t /keyboard/keypress `` terminal, data will show based on the key you pressed, this is how you will code your motions in the `` building_robots.sdf `` file. For example, if the up arrow gave a data value of 16777235 and you wanted that to be the code to represent you moving forward, add this code to your sdf file
 
-``
+```
 <!-- Moving Forward-->
 <plugin filename="gz-sim-triggered-publisher-system"
         name="gz::sim::systems::TriggeredPublisher">
@@ -373,6 +375,6 @@ In the `` gz topic -e -t /keyboard/keypress `` terminal, data will show based on
     </output>
 </plugin>
 
-``
+```
 
 
