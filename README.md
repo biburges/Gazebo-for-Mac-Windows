@@ -379,4 +379,9 @@ In the `` gz topic -e -t /keyboard/keypress `` terminal, data will show based on
 
 ```
 
+## Commentary
+
+### Mac
+
+The install process was really easy and simple when I used Harmonic and Ionic versions but running the program proposed problems as I found myself having to uninstall and reinstall the software every time I wanted to make an update to the sdf file
 
