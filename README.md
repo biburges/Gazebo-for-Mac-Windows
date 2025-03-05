@@ -19,7 +19,7 @@ Run the following code in a terminal:
 brew tap osrf/simulation
 ``
 ``
-brew install gz-harmonic
+brew install gz-ionic
 ``
 
 **NOTE: If you get a warning that says something like the following:**
