@@ -85,7 +85,21 @@ gz sim -v 4 -g
   ```
 
 ## Build a Robot(Car)
-
+### Importing a car model
+- Clone a pre-built model of a car via a github repo from the link below
+  ```
+  git clone https://github.com/osrf/car_demo
+  ```
+- Navigate to the cloned repo and view the models the repository possess
+- Open up a gazebo simulation through running
+  ```
+  wsl
+  gazebo
+  ```
+- To spawn the appropriate model, type the following
+  ```
+  gz model --spawn-file=model.sdf --model-name=my_box <where model.sdf is changed to the name of your model's .sdf file>
+  ```
 ### Build a World
 
 First Create a SDF file titled ``` building_robot.sdf ``` and paste the following code into it:
